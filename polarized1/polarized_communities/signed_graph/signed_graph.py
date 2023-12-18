@@ -35,8 +35,7 @@ class SignedGraph:
 
         # get the number of nodes from the first line
         self.number_of_nodes = int(dataset_file.readline().replace('# ', ''))
-        self.nodes_iterator = 
-range(self.number_of_nodes)
+        self.nodes_iterator = range(self.number_of_nodes)
 
         # create the empty adjacency list
         self.adjacency_list = [[array('i'), array('i')] for _ in self.nodes_iterator]
